@@ -32,16 +32,7 @@ app.get("/get-posts", function (req, res) {
   res.sendfile(__dirname + "/data/posts.json");
 });
 
-// fs.writeFile(__dirname + "/data/posts.json", yourData, function (error) {
-//   // do something
-// });
 
-// fs.readFile(__dirname + "/data/posts.json", "utf8", function (error, file) {
-//   // console.log(file.toString());
-//   var parsedFile = JSON.parse(file);
-//   console.log(parsedFile);
-//   // fs.writeFile("posts.json", file);
-// });
 
 app.listen(8000, function () {
   console.log("Server is listening on port 3000. Ready to accept requests!");
